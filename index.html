@@ -3,106 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soho Studio — Editorial Fashion</title>
+    <title>Soho Studio - Premium Fashion</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Navigation -->
     <nav class="nav">
         <div class="nav-container">
             <a href="index.html" class="logo">SOHO STUDIO</a>
             <div class="nav-links">
                 <a href="index.html">Home</a>
-                <a href="lookbook.html">Lookbook</a>
+                <a href="lookbook.html" id="lookbookLink">Lookbook</a>
                 <a href="login.html" id="authLink">Login</a>
             </div>
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-image">
-            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=1600&q=80" alt="Fashion hero">
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=1920&q=80" alt="Soho Studio Fashion" loading="lazy">
+            <div class="hero-overlay"></div>
         </div>
         <div class="hero-content fade-in">
-            <h1>Timeless Elegance</h1>
-            <p>Curated fashion for the modern connoisseur</p>
+            <h1 class="hero-title">Timeless Elegance</h1>
+            <p class="hero-subtitle">Curated fashion for the modern connoisseur</p>
+            <a href="#collection" class="cta-button">Explore Collection</a>
         </div>
     </section>
 
-    <section class="lookbook-grid fade-in-up">
-        <h2>Spring Collection</h2>
-        <div class="grid">
-            <div class="grid-item">
-                <img src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?w=800&q=80" alt="Fashion 1">
-            </div>
-            <div class="grid-item">
-                <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&q=80" alt="Fashion 2">
-            </div>
-            <div class="grid-item">
-                <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=800&q=80" alt="Fashion 3">
-            </div>
-            <div class="grid-item">
-                <img src="https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?w=800&q=80" alt="Fashion 4">
-            </div>
-            <div class="grid-item">
-                <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=800&q=80" alt="Fashion 5">
-            </div>
-            <div class="grid-item">
-                <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=800&q=80" alt="Fashion 6">
+    <!-- About Section -->
+    <section class="about fade-in-scroll">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">The Soho Philosophy</h2>
+                <p class="about-text">
+                    At Soho Studio, we believe fashion is an art form. Each piece in our collection is carefully selected 
+                    to embody sophistication, quality, and timeless design. We celebrate individuality while honoring 
+                    the heritage of classic tailoring and contemporary innovation.
+                </p>
             </div>
         </div>
     </section>
 
-    <section class="about fade-in-up">
-        <div class="about-content">
-            <h2>About Soho Studio</h2>
-            <p>Founded in the heart of the city, Soho Studio represents the intersection of timeless design and contemporary sensibility. Each piece is carefully selected to embody elegance, quality, and understated luxury.</p>
-            <p>Our collections celebrate individuality while honoring the craft of fashion. We believe in pieces that transcend seasons, creating a wardrobe that evolves with you.</p>
-        </div>
-    </section>
-
-    <section class="featured fade-in-up">
-        <h2>Featured Collection</h2>
-        <div class="featured-grid">
-            <div class="featured-item">
-                <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=800&q=80" alt="Featured 1">
-                <h3>The Essentials</h3>
-                <p>Wardrobe foundations</p>
-            </div>
-            <div class="featured-item">
-                <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=800&q=80" alt="Featured 2">
-                <h3>Evening Edit</h3>
-                <p>Statement pieces</p>
-            </div>
-            <div class="featured-item">
-                <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=800&q=80" alt="Featured 3">
-                <h3>Accessories</h3>
-                <p>Finishing touches</p>
+    <!-- Lookbook Preview Grid -->
+    <section class="lookbook-preview fade-in-scroll">
+        <div class="container">
+            <h2 class="section-title">Latest Lookbook</h2>
+            <div class="lookbook-grid">
+                <div class="lookbook-item">
+                    <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&q=80" alt="Fashion 1" loading="lazy">
+                </div>
+                <div class="lookbook-item">
+                    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=800&q=80" alt="Fashion 2" loading="lazy">
+                </div>
+                <div class="lookbook-item">
+                    <img src="https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?w=800&q=80" alt="Fashion 3" loading="lazy">
+                </div>
+                <div class="lookbook-item">
+                    <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=800&q=80" alt="Fashion 4" loading="lazy">
+                </div>
+                <div class="lookbook-item">
+                    <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=800&q=80" alt="Fashion 5" loading="lazy">
+                </div>
+                <div class="lookbook-item">
+                    <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=800&q=80" alt="Fashion 6" loading="lazy">
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="newsletter fade-in-up">
-        <div class="newsletter-content">
-            <h2>Join Our Circle</h2>
-            <p>Receive early access to new collections and exclusive editorial content</p>
-            <form class="newsletter-form" id="newsletterForm">
-                <input type="email" placeholder="Your email address" required>
-                <button type="submit">Subscribe</button>
-            </form>
-            <p class="newsletter-message" id="newsletterMessage"></p>
+    <!-- Featured Collection -->
+    <section class="featured-collection fade-in-scroll" id="collection">
+        <div class="container">
+            <h2 class="section-title">Featured Collection</h2>
+            <div class="collection-grid">
+                <div class="collection-item">
+                    <div class="collection-image">
+                        <img src="https://images.unsplash.com/photo-1539533018447-63fcce2678e3?w=600&q=80" alt="Collection Item 1" loading="lazy">
+                    </div>
+                    <h3 class="collection-name">Midnight Elegance</h3>
+                    <p class="collection-price">₦285,000</p>
+                </div>
+                <div class="collection-item">
+                    <div class="collection-image">
+                        <img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?w=600&q=80" alt="Collection Item 2" loading="lazy">
+                    </div>
+                    <h3 class="collection-name">Urban Sophisticate</h3>
+                    <p class="collection-price">₦195,000</p>
+                </div>
+                <div class="collection-item">
+                    <div class="collection-image">
+                        <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=600&q=80" alt="Collection Item 3" loading="lazy">
+                    </div>
+                    <h3 class="collection-name">Classic Noir</h3>
+                    <p class="collection-price">₦320,000</p>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- Newsletter Section -->
+    <section class="newsletter fade-in-scroll">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2 class="section-title">Join Our Circle</h2>
+                <p class="newsletter-text">Be the first to discover new collections and exclusive offers</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email" class="newsletter-input" required>
+                    <button type="submit" class="newsletter-button">Subscribe</button>
+                </form>
+                <p class="newsletter-success" id="newsletterSuccess">Thank you for subscribing!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; 2024 Soho Studio. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="#">Instagram</a>
-                <a href="#">Privacy</a>
-                <a href="#">Terms</a>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="logo">SOHO STUDIO</h3>
+                    <p>Timeless fashion, modern sensibility</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="lookbook.html">Lookbook</a>
+                    <a href="login.html">Login</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Soho Studio. All rights reserved.</p>
             </div>
         </div>
     </footer>
